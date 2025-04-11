@@ -1,32 +1,82 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Mi primer sitio</title>
-        <link rel="stylesheet" href="estilos.css">
-    </head>
-    <body>
-        <header>
-            <h1>Jana Martinez</h1>
-            <h3>Futura diseñadora gráfica e ilustradora</h3>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Curriculum Jana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <!-- Acá va ir otra imagen no la que esta puesta, es de prueba / Imagen grande -->
+  <section class="portada">
+    <img src="img/imagenportada.png" alt="imagen de portada curriculum jana" />
+    <h1>Bienvenidos</h1>   <!--quizas lo saque, una pregunta para pasar el navegador y que se vea cuando entras a la pagina, y luego al hacer click en "sobremi" te dirija hacia alli abajo, debo ponerlo aca o y no en el header verdad?-->
+  </section>
+
+        <header class="header">
             <nav>
-                <ul>
-                    <li><a href="#">Sobre mí</a></li>
-                    <li><a href="https://github.com/JanaMartinezLi/JanaMartinez" target="_blank">Mi Github</a></li>
-                    <li><a href="#">Contacto</a></li>
+                <ul class="nav-links">
+                  <li><a href="#sobre-mi">Sobre mí</a></li>
+                  <li><a href="#estudios">Estudios y habilidades</a></li>
+                  <li><a href="#proyectos">Proyectos</a></li>
                 </ul>
-            </nav>
+              </nav>
         </header>
+        
         <main>
-            <section>
-                <h4>POR FAVOR GUARDE SILENCIO!</h4>
-                <article>
-                    <p>ESTAMOS EN PROCESO...</p>
-                    <img src="img/silencio.png" alt="Poster ilustrado del libro silencio, hecho por Jana Martinez" width="300">
-                </article>
-          
+            <section id="#sobre-mi" class="sobre mi">
+                <h2>Sobre mí</h2>
+                <div class="perfil">
+                    <img src="img/fotopersonal.png" alt="Foto de mi perfil" class="foto-perfil" />
+                    <div class="info-personal">
+                        <p>Tengo casi 28 años, me encuentro estudiando Diseño y Comunicación Visual en la Universidad Nacional de Lanus.
+                            Me gustan los trabajos con muchos colores, el estilo kawaii y la cultura asiática. 
+                            Creo que una caracteristica sobre mí, es que me gusta más dibujar y hacer ilustraciones ya que el diseño es algo que aprendo día a día.
+                            Me gusta ser detallista, creativa y proactiva. Actualmente me encuentro trabajando en silencio mi libro ilustrado.</p>
+                        <ul class="redes">
+                            <h2>Mis Redes!</h2>
+                            <li>📧 Email:janatatiana.martinez@gmail.com</li>
+                            <li>📸 <a href="https://instagram.com/lihn_x" target="_blank">Instagram</a></li>
+                            <li>💼 Linkedin: Jana Martinez</li>
+                            <li>🎨 Behance: Lihnnie</li>
+                            <li>🐱 <a href="https://github.com/JanaMartinezLi" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experiencia" class="experiencia">
+                <h2>Mis estudios</h2>
+                <ul>
+                  <li>🎓 2014 Secundario
+                        Instituto Jose Manuel Estrada
+                        Bachiller en Economía y Gestión
+                  </li>
+                  <li>🎓 2022 - Presente 
+                        Universidad Nacional de Lanus-UNLa
+                        Diseño y Comunicación Visual
+                  </li>
+                  <li>🎨 2019 - 2020
+                        Centro de Formacion para el trabajo
+                        Serigrafista
+                  </li>
+                </ul>
+            </section>
+
+            <section id="proyectos" class="proyectos">
+                <h2>Proyectos</h2>
+                <ul>
+                  <li>✨ Proyecto "Silencio" - Libro ilustrado con acuarelas</li>
+                  <li>🎮 Diseños para servidor Minecraft: Godhelm y Luminor</li>
+                  <li>💻 Revista digital temática: "Entre juegos y dibujitos"</li>
+                </ul>
+            </section>
+        </main>
+
         <footer>
             <p>&copy; 2025 Mi primer sitio Jana Martinez</p>
         </footer>
-    </body>
+
+</body>
 </html>

@@ -1,0 +1,73 @@
+/* margenes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.portada {
+  text-align: center;
+  background-color: #00158d;
+  padding: 0px 0px;
+}
+
+.portada img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 0px;
+}
+
+.portada h1 { /*no creo que quede muy bien pero estoy viendo*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25em;
+  color: #ca0588;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Caveat', cursive;
+  z-index: 1;
+}
+
+
+/* backgorund;fondo por ahora liso */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #a5cfff; 
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #00158d;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegación */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 500px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ca0588;   /*puse las etras magenta para los texto en navegacion*/
+  font-weight: bold;
+  font-size: 2.2em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+color: #7a3db8; 
+}
+
+/* Títulos especiales */
+h1, h2 {
+  font-family: 'Caveat', cursive;
+}
