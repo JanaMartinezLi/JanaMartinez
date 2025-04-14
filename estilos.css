@@ -35,7 +35,7 @@
 /* backgorund;fondo por ahora liso */
 body {
   font-family: 'Quicksand', sans-serif;
-  background-color: #a5cfff; 
+  background-color: #00158d; 
   color: #333;
 }
 
@@ -64,10 +64,75 @@ body {
 }
 
 .nav-links a:hover {
-color: #7a3db8; 
+color: #fff; 
+background-color: #ca0588;
+padding: 5px 10px;
+border-radius: 5px;
 }
 
-/* Títulos especiales */
+/* Títulos especiales  como titulo mayor y subtitulos por ahora así*/
 h1, h2 {
   font-family: 'Caveat', cursive;
 }
+
+.sobre-mi {
+  padding: 60px 100px;
+  background-color: #ce0071;
+  color: white;
+}
+
+
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+.foto-perfil {
+  width: 400px;
+  height: auto;
+  border-radius: 30px;
+  margin-left: 120px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info-personal h2 { 
+  display: flex;
+  font-size: 1.5em;
+}
+
+.info-personal {
+  flex: 1;
+  max-width: 1000px;
+  margin-right: 200px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: white;
+  border: 1px solid white; 
+  padding: 20px; 
+  border-radius: 15px; 
+}
+
+.redes {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.redes li {
+  margin-bottom: 10px;
+}
+
+.redes a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.redes a:hover {
+  color: #0805ca;
+}
+/*Sigo probando varias cosas, las imagenes y el diseño no está termindo. 
+Los colores si seran los que voy a usar, pero lo que es imagenes y diseño en general todavia no están terminados*/
