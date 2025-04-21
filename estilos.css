@@ -1,138 +1,262 @@
-/* margenes */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.portada {
+/* Página de inicio */
+.inicio {
+  height: 100vh;
+  background-color: #c0c0c0;
+  background-image: url(img/Backgroundinicio.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: #00158d;
-  padding: 0px 0px;
 }
 
-.portada img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  margin-bottom: 0px;
+.boton-cv {
+  background-color: #db0e88;
+  margin-bottom: -230px;
+  color: white;
+  border: none;
+  padding: 30px 60px;
+  font-size: 3.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px #0888b5;
+  transition: 0.2s;
 }
 
-.portada h1 { /*no creo que quede muy bien pero estoy viendo*/
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25em;
-  color: #ca0588;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  font-family: 'Caveat', cursive;
-  z-index: 1;
+.boton-cv:hover {
+  background-color: #00aaaa;
 }
 
-
-/* backgorund;fondo por ahora liso */
-body {
-  font-family: 'Quicksand', sans-serif;
-  background-color: #00158d; 
-  color: #333;
-}
-
-/* Header */
-.header {
-  background-color: #00158d;
-  padding: 20px 0;
+/* Página de ventanas:habilidades, estudios, proyectos etc*/
+.curriculum {
+  background-color: #3c2694;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Navegación */
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 500px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #ca0588;   /*puse las etras magenta para los texto en navegacion*/
-  font-weight: bold;
-  font-size: 2.2em;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-color: #fff; 
-background-color: #ca0588;
-padding: 5px 10px;
-border-radius: 5px;
-}
-
-/* Títulos especiales  como titulo mayor y subtitulos por ahora así*/
-h1, h2 {
-  font-family: 'Caveat', cursive;
-}
-
-.sobre-mi {
-  padding: 60px 100px;
-  background-color: #ce0071;
-  color: white;
-}
-
-
-.perfil {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 150px;
-  flex-wrap: wrap;
+  padding: 80px 20px; 
+  box-sizing: border-box;
 }
 
-.foto-perfil {
-  width: 400px;
-  height: auto;
-  border-radius: 30px;
-  margin-left: 120px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.info-personal h2 { 
+.ventana-principal {
   display: flex;
-  font-size: 1.5em;
-}
-
-.info-personal {
-  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   max-width: 1000px;
-  margin-right: 200px;
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: white;
-  border: 1px solid white; 
-  padding: 20px; 
-  border-radius: 15px; 
+  width: 100%;
 }
 
-.redes {
+.ventana {
+  background-color: #c0c0c0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 9px 11px 0px 0px rgb(0, 194, 229);
+  width: 100%;
+  flex: 1 1 470px;
+  max-width: 470px;
+  overflow: hidden;
+}
+
+.ventana h2 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  background-color: #0078e4;
+  border: 2px solid #25125c;
+  border-right-color: #dc49be;
+  border-bottom-color: #dc49be;
+  border-radius: 10px;
+  margin-block: 5px;
+  padding: 7px 14px;
+  box-shadow: inset -3px -3px #7e338c, inset 3px 3px #ffffff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ventana ul {
+  list-style: none;
+  font-size: 1.1rem;
+  color: #27145d;
+  font-family: cursive;
+  padding: 5px 10px;
+}
+
+.ventana li {
+  margin-bottom: 8px;
+
+}
+
+.ventana p {
+  margin-bottom: 10px;
+}
+
+
+.icono {
+  width: 25px;
+  height: 25px;
+  image-rendering: pixelated;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.img-habilidades {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: inset -3px -3px #7e338c, inset 3px 3px #ffffff;
+  margin-block: 10px;
+}
+
+
+.footer {
+  background-color: #c0c0c0;
+  border-top: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.inicio-boton {
+  background-color: #008080;
+  color: white;
+  padding: 5px 15px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.inicio-boton:hover {
+  background-color: #00aaaa;
+}
+
+.reloj {
+  font-weight: bold;
+}
+
+.cv-header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c2694;
+}
+
+
+.cv-header-contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: #c0c0c0;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1000px;
+  width: 100%;
+  flex-wrap: wrap;
+  box-shadow: 9px 11px 2px 4px rgb(0 194 229);
+}
+
+
+.cv-header-foto h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  width: 300px;
+  text-align: center;
+  background-color: #0078e4;
+  border: 2px solid #25125c;
+  border-right-color: #dc49be;
+  border-bottom-color: #dc49be;
+  border-radius: 10px;
+  margin-block: 20px;
+  padding: 7px 14px;
+  box-shadow: inset -3px -3px #7e338c, inset 3px 3px #ffffff;
+}
+
+.foto {
+  width: 300px;
+  max-width: 300px;
+  height: auto;
+}
+
+.redes{
   margin-top: 20px;
   list-style: none;
   padding: 0;
 }
 
 .redes li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #c0c0c0;
+  border: 2px solid #25125c;
+  border-right-color: #dc49be;
+  border-bottom-color: #dc49be;
+  border-radius: 10px;
+  padding: 2px 8px;
+  box-shadow: inset -3px -3px #7e338c, inset 3px 3px #ffffff;
   margin-bottom: 10px;
+  width: 200px;
 }
 
 .redes a {
-  color: #ffffff;
   text-decoration: none;
+  font-size: 1.4rem;
   font-weight: bold;
+  color: #ffffff;
+}
+.redes a:hover {
+  color: #25125c;
 }
 
-.redes a:hover {
-  color: #0805ca;
+.cv-texto {
+  flex: 1;
+  min-width: 250px;
+  color: #000;
 }
-/*Sigo probando varias cosas, las imagenes y el diseño no está termindo. 
-Los colores si seran los que voy a usar, pero lo que es imagenes y diseño en general todavia no están terminados*/
+
+.cv-header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #0078e4;
+  border: 2px solid #25125c;
+  border-right-color: #dc49be;
+  border-bottom-color: #dc49be;
+  border-radius: 10px;
+  margin-block: 20px;
+  padding: 10px 20px;
+  box-shadow: inset -3px -3px #7e338c, inset 3px 3px #ffffff;
+  
+}
+
+.cv-header p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+

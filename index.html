@@ -1,83 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Curriculum Jana</title>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Jana Martínez</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
-  <!-- Acá va ir otra imagen no la que esta puesta, es de prueba / Imagen grande -->
-  <section class="portada">
-    <img src="img/imagenportada.png" alt="imagen de portada curriculum jana" />
-    <h1>Bienvenidos</h1>   <!--quizas lo saque, una pregunta para pasar el navegador y que se vea cuando entras a la pagina, y luego al hacer click en "sobremi" te dirija hacia alli abajo, debo ponerlo aca o y no en el header-->
+  <section class="inicio">
+    <button class="boton-cv" onclick="document.getElementById('perfil').scrollIntoView({behavior: 'smooth'});">CLICK</button> 
   </section>
 
-        <header class="header">
-            <nav>
-                <ul class="nav-links">
-                  <li><a href="#sobre-mi">Sobre mí</a></li>
-                  <li><a href="#estudios">Estudios y habilidades</a></li>
-                  <li><a href="#proyectos">Proyectos</a></li>
-                </ul>
-              </nav>
-        </header>
-        
-        <main>
-            <section id="#sobre-mi" class="sobre-mi">
-                <div class="perfil">
-                    <img src="img/fotopersonal.png" alt="Foto de mi perfil" class="foto-perfil" />
-                    <div class="info-personal">
-                      <h2>Holis!</h2>
-                        <p>Tengo casi 28 años, me encuentro estudiando Diseño y Comunicación Visual en la Universidad Nacional de Lanus.
-                            Me gustan los trabajos con muchos colores, el estilo kawaii y la cultura asiática. 
-                            Creo que una caracteristica sobre mí, es que me gusta más dibujar y hacer ilustraciones ya que el diseño es algo que aprendo día a día.
-                            Soy detallista creativa y proactiva. Actualmente me encuentro trabajando en silencio mi libro ilustrado.
-                        </p>
-                        <ul class="redes">
-                            <h2>Te dejo mis redes</h2>
-                            <li>📧 Email:janatatiana.martinez@gmail.com</li>
-                            <li>📸 <a href="https://instagram.com/lihn_x" target="_blank">Instagram</a></li>
-                            <li>💼 Linkedin: Jana Martinez</li>
-                            <li>🎨 Behance: Lihnnie</li>
-                            <li>🐱 <a href="https://github.com/JanaMartinezLi" target="_blank">Github</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+  <header id="perfil" class="cv-header">
+    <article class="cv-header-contenido">
+      <div class="cv-header-foto">
+        <img src="img/fotoperfil.svg" alt="Foto de la cara de Jana Martinez" class="foto">
+        <h3>Mis redes...</h3>
+        <ul class="redes">
+          <li>📧 <a href="mailto:janatatiana.martinez@gmail.com">Email</a></li>
+          <li>📸 <a href="https://instagram.com/lihn_x" target="_blank">Instagram</a></li>
+          <li>💼 <a href="https://www.linkedin.com/in/jana-martinez-5a9a242b7/" target="_blank">Linkedin</a></li>
+          <li>🎨 <a href="https://www.behance.net/janamartinez4" target="_blank">Behance</a></li>
+          <li>🐱 <a href="https://github.com/JanaMartinezLi" target="_blank">Github</a></li>
+      </ul>
+      </div>
+      <div class="cv-texto">
+        <h1>Un poquito sobre mí.doc</h1>
+        <p>
+          ¡Hola! Soy Jana Martínez, diseñadora gráfica en formación con una fuerte amor por lo visual, los colores vibrantes, los píxeles y las estéticas mas retros, como así tambien el estilo kawaii.
+          Actualmente estoy estudiando Diseño y Comunicación Visual, y disfruto cada paso del proceso creativo, aunque a veces me quiero agarrar de los pelos.
+          Me defino como alguien curiosa, detallista y que puede trabajar bajo presión. Me encantan los videojuegos, el pixel art, el diseño editorial, en especial las portadas de libros.
+          Cuando no estoy diseñando, suelo perderme dibujando, música, algún que otro juego de aventuras o creando cosas que me hacen feliz.
+        </p>
+        <a href="#cv" class="boton-cv">Mas..</a>
+      </div>
+    </article>
+  </header>
+  
+  <main id="cv" class="curriculum">
+    <article class="ventana-principal">
+  
+      <div class="ventana">
+        <h2><img src="img/iconoeducacion.png" alt="Icono" class="icono"> ESTUDIOS.DOC</h2>
+        <ul>
+          <li><span class="bold">Secundario:</span> Instituto José Manuel Estrada, Bachiller en Economía y Gestión</li>
+          <li><span class="bold">Universidad:</span> Universidad Nacional de Lanus- Diseño y Comunicación Visual</li>
+          <li><span class="bold">Serigrafia:</span> Centro de formación para el trabajo</li>
+          <li><span class="bold">Ilustración:</span>Domestika</li>
+        </ul>
+      </div>
+  
+      <div class="ventana">
+        <h2><img src="img/iconoexperiencia.png" alt="Icono" class="icono"> Experiencia</h2>
+        <ul>
+          <li><span class="bold">Estudio Creativo PixelArte</span> – Diseño de Identidad Visual (2022 - Presente)</li>
+          <li><span class="bold">Freelancer</span> – Diseño gráfico y redes sociales para emprendimientos independientes (2020 - Presente)</li>
+        </ul>
+      </div>
+  
+      <div class="ventana">
+        <h2><img src="img/iconohabilidades.png" alt="Icono" class="icono"> Habilidades</h2>
+        <img src="img/skillspoints.svg" alt="habilidades o skillpoints de Jana" class="img-habilidades">
+      </div>
+  
+      <div class="ventana">
+        <h2><img src="img/iconoperfil.png" alt="Icono" class="icono"> Proyectos</h2>
+        <ul>
+          <li><span class="bold">Revista "Silencio"</span> – Diseño e ilustración de libro emocional y poético</li>
+          <li><span class="bold">Catálogo "El Conjuro"</span> – Diseño editorial con enfoque cronológico</li>
+          <li><span class="bold">Fanzine "N°7"</span> – Exploración tipográfica y composición gráfica</li>
+        </ul>
+      </div>
+  
+    </article>
+  </main>
 
-            <section id="experiencia" class="experiencia">
-                <h2>Mis estudios</h2>
-                <ul>
-                  <li>🎓 2014 Secundario
-                        Instituto Jose Manuel Estrada
-                        Bachiller en Economía y Gestión
-                  </li>
-                  <li>🎓 2022 - Presente 
-                        Universidad Nacional de Lanus-UNLa
-                        Diseño y Comunicación Visual
-                  </li>
-                  <li>🎨 2019 - 2020
-                        Centro de Formacion para el trabajo
-                        Serigrafista
-                  </li>
-                </ul>
-            </section>
+  <footer class="footer">
+    <div class="inicio-boton">Inicio</div>
+    <div class="reloj" id="reloj"></div>
+  </footer>
 
-            <section id="proyectos" class="proyectos">
-                <h2>Proyectos</h2>
-                <ul>
-                  <li>✨ Proyecto "Silencio" - Libro ilustrado con acuarelas</li>
-                  <li>🎮 Diseños para servidor Minecraft: Godhelm y Luminor</li>
-                  <li>💻 Revista digital temática: "Entre juegos y dibujitos"</li>
-                </ul>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2025 Mi primer sitio Jana Martinez</p>
-        </footer>
-
+  <script>
+    function actualizarHora() {
+      const reloj = document.getElementById('reloj');
+      const ahora = new Date();
+      let horas = ahora.getHours().toString().padStart(2, '0');
+      let minutos = ahora.getMinutes().toString().padStart(2, '0');
+      reloj.textContent = `${horas}:${minutos}`;
+    }
+    setInterval(actualizarHora, 1000);
+    actualizarHora();
+  </script>
 </body>
 </html>
